@@ -37,9 +37,8 @@ public final class Chatcatcher extends JavaPlugin implements Listener {
         config = YamlConfiguration.loadConfiguration(configFile);
 
         catcherDataMap = new HashMap<>();
-
-        Objects.requireNonNull(getCommand("chatcatcher")).setExecutor(this);
-        Objects.requireNonNull(getCommand("setcatcher")).setExecutor(this);
+        getCommand("chatcatcher").setExecutor(this);
+        getCommand("setcatcher").setExecutor(this);
         this.getServer().getConsoleSender().sendMessage(Texts.logo);
     }
 
