@@ -1,0 +1,4 @@
+name: Chatcatcher
+version: '${version}'
+main: org.windy.chatcatcher.Chatcatcher
+api-version: '1.20'
