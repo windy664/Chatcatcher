@@ -1,0 +1,19 @@
+catchers:
+  catcher1:
+    type: CHAT
+    start:
+      - 'tell %player_name% %&b&lPlease input something:'
+    cancel:
+      - 'tell %player_name% &8Cancelled'
+    end:
+      - 'tell %player_name% You entered: {input}'
+      - 'give %player_name% diamond {input}'
+
+  catcher2:
+    type: SIGN
+    start:
+      - 'tell %player_name% &b&lPlease input a valid number on the sign'
+    cancel:
+      - 'tell %player_name% &8Cancelled'
+    end:
+      - 'tell %player_name% Set amount to: {input}'
