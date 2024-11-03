@@ -33,5 +33,5 @@ jobs:
     - name: Archive JAR file
       uses: actions/upload-artifact@v3
       with:
-        name: $name
+        name: Chatcatcher
         path: build/libs/*.jar
